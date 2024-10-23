@@ -80,14 +80,31 @@
         word-spacing: 10px;
     }
     #top_page{
-        background-image: url('images/bg_top.jpg');
+        background-image: url('images/condo_building.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 70vh;
+        position: relative;
     }
+    #top_page::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: inherit;
+        background-size: inherit;
+        background-position: center;
+        filter: brightness(60%);
+        opacity: 1;
+    }
+
     #cont_top{
         height: 70vh;
         display:flex;
+        position: relative;
+        z-index: 2;
     }
     .offcanvas-body .nav-link{
         color: black;
@@ -117,8 +134,9 @@
         padding-bottom: 3vh;
     }
     .icon_img img{
-        width: 30%;
-        height: 10vh;
+        width: 45%;
+        height: 15vh;
+        background-color: violet;
     }
     /* .col img{
         height: 20vh;
@@ -499,7 +517,7 @@
         width: 100%;
     }
     #global img{
-        height: 60vh;
+        height: 70vh;
         width: 50%;
     }
     #contact_us {
@@ -1231,7 +1249,7 @@
                     <div class="header justify-content-center align-items-center">
                         <h4>Local Exposure</h4>
                     </div>
-                    <div class="description text-start">
+                    <div class="description text-center">
                         <p class="content">
                             Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. 
                             When you list your home with Hansen Partners it will automatically appear on Nextdoor in your neighborhood.
@@ -1252,7 +1270,7 @@
                     <div class="header justify-content-center align-items-center">
                         <h4>International Exposure</h4>
                     </div>
-                    <div class="description text-end">
+                    <div class="description text-center">
                         <p class="content">
                             To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, 
                             China.apr.com, Caimeiju, Juwai, Country Life UK 
